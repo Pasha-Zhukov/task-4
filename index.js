@@ -148,7 +148,7 @@ function start() {
         getAtackPlayer = getNumberConsole();
         batteryCooldown();
     }
-    //Функция аккмулятор для (cooldown).
+    //Функция аккумулятор для (cooldown).
     function batteryCooldown() {
         if (getAtackPlayer == 2 || getAtackPlayer == 3 || getAtackPlayer == 4 || (getAtackBot == 1 && (cooldown22 > 0 || cooldown33 > 0 || cooldown44 > 0))) {
             cooldown22 = cooldown22 - 1;
@@ -175,7 +175,7 @@ function playersFight() {
     cc = battleMage.moves[getAtackPlayer - 1].physicArmorPercents;  // физическая броня
     dd = battleMage.moves[getAtackPlayer - 1].magicArmorPercents;  // магическая броня
 
-    // Используем данные и висчитываем урон.
+    // Используем данные и высчитываем  урон.
     healthPlayer = healthPlayer - (a - (cc / 100 * a)) - (b - (dd / 100 * b));
     monster.maxHealth = monster.maxHealth - (aa - (c / 100 * aa)) - (bb - (d / 100 * bb));
     // Приводим к числу и округляем до одного знака после запятой.
